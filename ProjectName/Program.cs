@@ -15,7 +15,7 @@ namespace ProjectName // Change project name!
 
       // app.UseDeveloperExceptionPage();
       app.UseHttpsRedirection();
-
+      app.UseStaticFiles();
       app.UseRouting();
 
       app.MapControllerRoute(
