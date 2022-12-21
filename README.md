@@ -1,8 +1,14 @@
 ## Setup for template
-* _change all appropriate names for ProjectName_
-* _ . - all appropriate files_
-* _ . - ProjectName.Tests.csproj_
-* _ . - Program.cs_
+* _change all appropriate names for ProjectName (file/folder names and in files as well)_
+* _create appsettings.json file in ProjectName folder_
+```{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=[database_name];uid=[USERNAME];pwd=[PASSWORD];"
+  }
+}```
+* _run dotnet commands below_
+```$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0```
 
 * _[$ dotnet watch run] to run project in developement mode_
 * _[$ dotnet watch run --launch-profile "production"] to run project in production mode._
@@ -20,6 +26,8 @@
 * _C#_
 * _.NET 6_
 * _ASP.NET Core MVC 6_
+* _Entity Framework Core_
+* _MySql_
 * _MS Tests_
 
 ## Description
