@@ -1,4 +1,5 @@
 # Setup for template
+#### Thanks [Robert Bryan](https://github.com/robbryandev) for the rad name replacement code! :pray:
 * _clone CSharpTemplate.Solution repository to desktop_
 * _run npm commands below in CSharpTemplate.Solution replacing [ProjectName] with the project name_
 ```
