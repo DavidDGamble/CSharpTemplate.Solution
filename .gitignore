@@ -1,4 +1,6 @@
+package-lock.json
+appsettings.json
+node_modules/
+.vscode
 obj 
 bin
-appsettings.json
-.vscode

@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-<!-- Change project name! -->
-    <ProjectReference Include="..\ProjectName\ProjectName.csproj" />  
+    <ProjectReference Include="..\$ProjectName\$ProjectName.csproj" />  
   </ItemGroup>
 
 </Project>

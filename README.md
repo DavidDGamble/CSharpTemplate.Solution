@@ -1,14 +1,29 @@
 ## Setup for template
-* _change all appropriate names for ProjectName (file/folder names and in files as well)_
-* _create appsettings.json file in ProjectName folder_
-```{
+* _clone CSharpTemplate.Solution repository to desktop_
+* _run npm commands below in CSharpTemplate.Solution replacing [ProjectName] with the project name_
+```
+npm i
+```
+```
+node ./index.js --name [ProjectName] --dest ~/Desktop
+```
+
+* _run dotnet commands below_
+```
+dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+```
+```
+dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+```
+
+* _create appsettings.json file in ProjectName folder if using a MySql database_
+```
+{
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=[database_name];uid=[USERNAME];pwd=[PASSWORD];"
   }
-}```
-* _run dotnet commands below_
-```$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
-$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0```
+}
+```
 
 * _[$ dotnet watch run] to run project in developement mode_
 * _[$ dotnet watch run --launch-profile "production"] to run project in production mode._

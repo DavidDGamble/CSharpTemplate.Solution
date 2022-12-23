@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using ProjectName.Models; // CHANGE PROJECT NAME!!!
+using $ProjectName.Models; 
 
-namespace ProjectName // CHANGE PROJECT NAME!!!
+namespace $ProjectName 
 {
   class Program
   {
@@ -14,7 +14,7 @@ namespace ProjectName // CHANGE PROJECT NAME!!!
       builder.Services.AddControllersWithViews();
 
       // Used with ProjectNameContext.cs in Models
-      builder.Services.AddDbContext<ProjectNameContext>( // CHANGE PROJECT NAME!!!
+      builder.Services.AddDbContext<$ProjectNameContext>( 
                         dbContextOptions => dbContextOptions
                           .UseMySql(
                             builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]

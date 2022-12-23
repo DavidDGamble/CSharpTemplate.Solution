@@ -3,12 +3,12 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace [ProjectName].Models // CHANGE PROJECT NAME!!!
+namespace $ProjectName.Models 
 {
-  public class [ProjectName]Context : DbContext // CHANGE PROJECT NAME!!!
+  public class $ProjectNameContext : DbContext 
   {
     public DbSet<ClassName> ClassNames { get; set; }  // CHANGE CLASS NAME!!!
 
-    public [ProjectName]Context(DbContextOptions options) : base(options) { } // CHANGE PROJECT NAME!!!
+    public $ProjectNameContext(DbContextOptions options) : base(options) { } 
   }
 }
