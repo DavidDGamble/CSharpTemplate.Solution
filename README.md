@@ -1,4 +1,4 @@
-## Setup for template
+# Setup for template
 * _clone CSharpTemplate.Solution repository to desktop_
 * _run npm commands below in CSharpTemplate.Solution replacing [ProjectName] with the project name_
 ```
