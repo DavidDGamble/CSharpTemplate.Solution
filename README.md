@@ -28,7 +28,7 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
 * _[$ dotnet watch run] to run project in developement mode_
 * _[$ dotnet watch run --launch-profile "production"] to run project in production mode._
 
-## FOR GH-PAGES
+
 
 # _{Application Name}_
 
