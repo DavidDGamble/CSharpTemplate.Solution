@@ -9,12 +9,9 @@ npm i
 node ./index.js --name [ProjectName] --dest ~/Desktop
 ```
 
-* _run dotnet commands below_
+* _run dotnet commands below in ProjectName and ProjectName.Tests_
 ```
-dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
-```
-```
-dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+dotnet restore
 ```
 
 * _create appsettings.json file in ProjectName folder if using a MySql database_
@@ -26,9 +23,14 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
 }
 ```
 
-* _[$ dotnet watch run] to run project in developement mode_
-* _[$ dotnet watch run --launch-profile "production"] to run project in production mode._
-
+* _to run project in developement mode_
+```
+dotnet watch run
+```
+* _to run project in production mode_
+```
+dotnet watch run --launch-profile "production"
+```
 
 
 # _{Application Name}_
